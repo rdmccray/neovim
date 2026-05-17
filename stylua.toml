@@ -1,0 +1,74 @@
+# ---- Core formatting ----
+
+# Target syntax (helps StyLua interpret Lua dialects correctly)
+syntax = "All" # Options: All, Lua51, Lua52, Lua53, Lua54, LuaJIT, Luau, CfxLua
+
+# Maximum line width before wrapping
+column_width = 100
+
+# Line endings
+line_endings = "Unix" # "Unix" or "Windows"
+
+# ---- Indentation ----
+
+indent_type = "Spaces" # "Tabs" or "Spaces"
+indent_width = 4       # Number of spaces (or tab width heuristic)
+
+# ---- Quotes ----
+
+quote_style = "AutoPreferDouble"
+# Options:
+# "AutoPreferDouble"
+# "AutoPreferSingle"
+# "ForceDouble"
+# "ForceSingle"
+
+# ---- Function call style ----
+
+call_parentheses = "Always"
+# Options:
+# "Always"
+# "NoSingleString"
+# "NoSingleTable"
+# "None"
+# "Input"
+
+# Space between function name and parentheses
+space_after_function_names = "Never"
+# Options:
+# "Never"
+# "Definitions"
+# "Calls"
+# "Always"
+
+# ---- Statement collapsing ----
+
+collapse_simple_statement = "Never"
+# Options:
+# "Never"
+# "FunctionOnly"
+# "ConditionalOnly"
+# "Always"
+
+# ---- Require sorting ----
+
+[sort_requires]
+enabled = true
+
+# ---- Optional / stylistic tweaks ----
+
+# These are less common but useful for fine-tuning behavior
+
+# StyLua respects .styluaignore for excluding files
+# (configured separately, not here) [1](https://linuxcommandlibrary.com/man/stylua)
+
+# ---- Example overrides (team-specific conventions) ----
+
+# Uncomment and tweak based on your team's preferences:
+
+# syntax = "Luau"
+# column_width = 80
+# indent_width = 2
+# quote_style = "AutoPreferSingle"
+# call_parentheses = "NoSingleTable"
+``
