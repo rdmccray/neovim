@@ -6,7 +6,7 @@ vim.g.maplocalleader = " " -- set local leader key to space
 -- tell neovim we have a nerd font installed
 vim.g.have_nerd_font = true
 
--- disable netrw
+-- disable netrw in lieu of nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -16,12 +16,6 @@ require("config.keymaps")
 
 -- load the lazy plugin manager
 require("config.lazy")
-
--- load plugins
--- require("plugins.catppuccin")
--- require("plugins.nvimtree")
--- require("plugins.treesitter")
--- require("plugins.telescope")
 
 -- load autocommands
 require("config.autocmds")
