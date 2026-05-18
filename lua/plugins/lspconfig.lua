@@ -8,11 +8,11 @@ return {
                         [vim.diagnostic.severity.ERROR] = " ",
                         [vim.diagnostic.severity.WARN] = " ",
                         [vim.diagnostic.severity.HINT] = "󰠠 ",
-                        [vim.diagnostic.severity.INFO] = " "
-                    }
-                }
+                        [vim.diagnostic.severity.INFO] = " ",
+                    },
+                },
             })
-        end
+        end,
     },
     {
         "williamboman/mason.nvim",
@@ -22,28 +22,28 @@ return {
                     package_installed = "✓",
                     package_pending = "➜",
                     package_uninstalled = "✗",
-                }
-            }
-        }
+                },
+            },
+        },
     },
     {
         "williamboman/mason-lspconfig.nvim",
         opts = {
             ensure_installed = {
                 "lua_ls",
-            }
-        }
+            },
+        },
     },
     {
         "WhoIsSethDaniel/mason-tool-installer.nvim",
         opts = {
             ensure_installed = {
-                "stylua"
+                "stylua",
+                "prettier",
             },
             integrations = {
-                ["mason-lspconfig"] = true
-            }
-        }
-    }
+                ["mason-lspconfig"] = true,
+            },
+        },
+    },
 }
-

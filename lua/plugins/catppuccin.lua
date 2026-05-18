@@ -1,5 +1,5 @@
 return {
-    "catppuccin/nvim", 
+    "catppuccin/nvim",
     name = "catppuccin",
     lazy = false,
     priority = 1000,
@@ -73,9 +73,8 @@ return {
                 },
             },
         })
-    -- setup must be called before loading
-    -- loads the colorscheme
-    vim.cmd.colorscheme "catppuccin-nvim"
-    end
+        -- setup must be called before loading
+        -- loads the colorscheme
+        vim.cmd.colorscheme("catppuccin-nvim")
+    end,
 }
-

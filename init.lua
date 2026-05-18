@@ -19,5 +19,3 @@ require("config.lazy")
 
 -- load autocommands
 require("config.autocmds")
-
-

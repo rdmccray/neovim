@@ -1,5 +1,4 @@
 return {
-    
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
@@ -56,7 +55,7 @@ return {
         api.events.subscribe(Event.TreeOpen, function()
             api.tree.expand_all()
         end)
-        
+
         -- set keymaps
         local keymap = vim.keymap -- for conciseness
         keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
