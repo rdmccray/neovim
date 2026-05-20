@@ -39,6 +39,7 @@ return {
         opts = {
             ensure_installed = {
                 "stylua",
+                "ruff",
             },
             integrations = {
                 ["mason-lspconfig"] = true,
