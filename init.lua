@@ -7,8 +7,9 @@ vim.g.maplocalleader = " " -- set local leader key to space
 vim.g.have_nerd_font = true
 
 -- disable netrw in lieu of nvim-tree
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- you can do this here in lazy.lua
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 -- load vim options and key mappings
 require("config.options")
