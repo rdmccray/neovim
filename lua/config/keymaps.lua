@@ -1,4 +1,11 @@
 -- ****************************************************************************
+-- wsl remap for visual block mode
+-- ****************************************************************************
+
+vim.keymap.set("n", "<C-q>", "<C-v>")
+vim.keymap.set("v", "<C-q>", "<C-v>")
+
+-- ****************************************************************************
 -- file manipulation
 -- ****************************************************************************
 
@@ -7,7 +14,7 @@ vim.keymap.set("n", "<leader>wq", ":wq<CR>", { desc = "Save and quit" })
 vim.keymap.set("n", "<leader>Q", ":qa!<CR>", { desc = "Quit all without saving" })
 vim.keymap.set("n", "<leader>qq", ":q!<CR>", { desc = "Quit without saving" })
 vim.keymap.set("n", "<leader>wf", ":w<CR>", { desc = "Save" })
-vim.keymap.set("n", "<leader>W", ":wqa<CR>", {desc = "Save and quit all" })
+vim.keymap.set("n", "<leader>W", ":wqa<CR>", { desc = "Save and quit all" })
 vim.keymap.set("n", "<leader>nh", ":noh<CR>", { desc = "Clear search highlights" })
 vim.keymap.set("n", "<leader>o", ":put=''<CR>", { desc = "Insert line below without insert mode" })
 vim.keymap.set("n", "<leader>O", ":put!=''<CR>", { desc = "Insert line above without insert mode" })
@@ -19,7 +26,7 @@ vim.keymap.set("n", "<leader>O", ":put!=''<CR>", { desc = "Insert line above wit
 vim.keymap.set("n", "<leader>bc", ":bdelete<CR>", { desc = "Close a buffer" })
 
 -- ****************************************************************************
--- split window management 
+-- split window management
 -- ****************************************************************************
 
 vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
